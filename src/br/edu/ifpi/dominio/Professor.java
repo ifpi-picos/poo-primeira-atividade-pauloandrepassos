@@ -23,5 +23,4 @@ public class Professor {
         return formacao;
     }
 
-    
 }
