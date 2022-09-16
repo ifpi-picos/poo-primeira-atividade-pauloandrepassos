@@ -10,62 +10,83 @@ public class Curso {
     private int ch;
     private String modalidade;
     private String nivel;
-    private LocalDate dataInicio;
-    private LocalDate dataFim;
+    //private LocalDate dataInicio;
+    //private LocalDate dataFim;
     private boolean gratuito;
     private List<Aluno> alunos;
     private Professor professor;
 
     public Curso(String nome, int ch, String modalidade, String nivel, boolean gratuito, Professor professor) {
-        this.nome = nome;
-        this.ch = ch;
-        this.modalidade = modalidade;
-        this.nivel = nivel;
-        this.gratuito = gratuito;
-        this.professor = professor;
-        this.alunos = new ArrayList<>();
-    }
-
-    public void realizarMatricula(Aluno aluno) {
-        this.alunos.add(aluno);
+        setNome(nome);
+        setCh(ch);
+        setModalidade(modalidade);
+        setNivel(nivel);
+        setGratuito(gratuito);
+        setProfessor(professor);
     }
 
     public String getNome() {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getCh() {
         return ch;
+    }
+
+    public void setCh(int ch) {
+        this.ch = ch;
     }
 
     public String getModalidade() {
         return modalidade;
     }
 
+    public void setModalidade(String modalidade) {
+        this.modalidade = modalidade;
+    }
+
     public String getNivel() {
         return nivel;
     }
 
-    public LocalDate getDataInicio() {
-        return dataInicio;
-    }
-
-    public LocalDate getDataFim() {
-        return dataFim;
+    public void setNivel(String nivel) {
+        this.nivel = nivel;
     }
 
     public boolean isGratuito() {
         return gratuito;
     }
 
-    public String getNomeProfessor() {
-        return this.professor.getNome();
-      }
-      
+    public void setGratuito(boolean gratuito) {
+        this.gratuito = gratuito;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
+
     public Professor getProfessor() {
         return professor;
     }
 
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
 
-    
+    public void status() {
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+    }
 }
