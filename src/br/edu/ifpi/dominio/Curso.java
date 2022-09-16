@@ -82,11 +82,11 @@ public class Curso {
     }
 
     public void status() {
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("Nome:          " + this.nome);
+        System.out.println("Carga horária: " + this.ch);
+        System.out.println("Modalidade:    " + this.modalidade);
+        System.out.println("Nível:         " + this.nivel);
+        System.out.println("É gratuito:    " + this.gratuito);
+        System.out.println("Professor:     " + this.professor + "\n");
     }
 }

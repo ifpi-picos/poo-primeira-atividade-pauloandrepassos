@@ -9,6 +9,9 @@ public class App {
         Aluno a1 = new Aluno("Paulo", "paulo@email", "curso123");
         Aluno a2 = new Aluno("João", "joao@email", "curso795");
 
+        System.out.println("Dados do curso: ");
+        c1.status();
+
         System.out.println("Dados aluno 1: ");
         a1.status();
         System.out.println("Dados aluno 2: ");

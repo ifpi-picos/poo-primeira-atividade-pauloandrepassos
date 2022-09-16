@@ -35,4 +35,9 @@ public class Professor {
         this.formacao = formacao;
     }
 
+    public void status() {
+        System.out.println("Nome:     ");
+        System.out.println("Email:    ");
+        System.out.println("Formação: ");
+    }
 }
