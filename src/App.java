@@ -17,4 +17,6 @@ public class App {
         System.out.println("Dados aluno 2: ");
         a2.status();
     }
+
+    
 }

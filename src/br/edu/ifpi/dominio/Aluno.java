@@ -40,9 +40,6 @@ public class Aluno {
         System.out.println("Email:     " + this.getEmail());
         System.out.println("Matrícula: " + this.getMatricula() + "\n");
     }
-
-    
-
     
     
 }
