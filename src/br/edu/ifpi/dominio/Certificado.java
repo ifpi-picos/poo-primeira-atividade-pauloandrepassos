@@ -1,20 +1,12 @@
 package br.edu.ifpi.dominio;
 
-import java.time.LocalDate;
-
 public class Certificado {
-    private LocalDate dataEmissao;
     private Curso curso;
     private Aluno aluno;
 
-    public Certificado(LocalDate dataEmissao, Curso curso, Aluno aluno) {
-        this.dataEmissao = dataEmissao;
-        this.curso = curso;
-        this.aluno = aluno;
-    }
-
-    public LocalDate getDataEmissao() {
-        return dataEmissao;
+    public Certificado(Curso curso, Aluno aluno) {
+        setCurso(curso);
+        setAluno(aluno);
     }
 
     public Curso getCurso() {
@@ -25,6 +17,12 @@ public class Certificado {
         return aluno;
     }
 
-    
-    
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
 }

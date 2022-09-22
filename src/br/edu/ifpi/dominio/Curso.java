@@ -23,7 +23,16 @@ public class Curso {
         setNivel(nivel);
         setGratuito(gratuito);
         setProfessor(professor);
+        this.alunos = new ArrayList<>();
     }
+
+    public int getAlunosMatriculados() {
+        return this.alunos.size();
+    }
+    
+    public void realizarMatricula(Aluno aluno) {
+        this.alunos.add(aluno);
+}
 
     public String getNome() {
         return nome;
@@ -75,6 +84,10 @@ public class Curso {
 
     public Professor getProfessor() {
         return professor;
+    }
+
+    public String getNomeProfessor() {
+        return this.professor.getNome();
     }
 
     public void setProfessor(Professor professor) {
