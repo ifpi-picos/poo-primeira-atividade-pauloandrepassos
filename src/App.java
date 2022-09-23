@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JOptionPane;
 
 import br.edu.ifpi.dominio.Aluno;
@@ -31,6 +30,8 @@ public class App {
                 exibirCursos();
             } else if (opcoes.get(opcaoSelecionad) == 4) {
                 exibirAlunos();
+            } else if (opcoes.get(opcaoSelecionad) == 5) {
+
             }
         }
     }
