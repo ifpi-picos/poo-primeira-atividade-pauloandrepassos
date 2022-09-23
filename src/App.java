@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.JOptionPane;
 
 import br.edu.ifpi.dominio.Aluno;
@@ -19,19 +20,19 @@ public class App {
         opcoes.add(5);
         opcoes.add(6);
 
-        int opcaoSelecionad = 1;
-        while (opcoes.get(opcaoSelecionad) != 6) {
-            opcaoSelecionad = exibirMenu(opcoes);
-            if (opcoes.get(opcaoSelecionad) == 1) {
+        int opcaoSelecionada = 1;
+        while (opcoes.get(opcaoSelecionada) != 6) {
+            opcaoSelecionada = exibirMenu(opcoes);
+            if (opcoes.get(opcaoSelecionada) == 1) {
                 cadastrarCurso(p1);
-            } else if (opcoes.get(opcaoSelecionad) == 2) {
+            } else if (opcoes.get(opcaoSelecionada) == 2) {
                 matricularAluno();
-            } else if (opcoes.get(opcaoSelecionad) == 3) {
+            } else if (opcoes.get(opcaoSelecionada) == 3) {
                 exibirCursos();
-            } else if (opcoes.get(opcaoSelecionad) == 4) {
+            } else if (opcoes.get(opcaoSelecionada) == 4) {
                 exibirAlunos();
-            } else if (opcoes.get(opcaoSelecionad) == 5) {
-
+            } else if (opcoes.get(opcaoSelecionada) == 5) {
+                gerarCertificado();
             }
         }
     }
@@ -105,6 +106,9 @@ public class App {
     }
 
     private static void gerarCertificado() {
-        
-    } 
+        List<Integer> opcoesAl = new ArrayList<>();
+        for (int i = 1; i <= alunos.size(); i++) {
+            opcoesAl.add(i);
+        }
+    } //incompleto
 }
